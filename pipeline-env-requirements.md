@@ -3,7 +3,7 @@
 
 # Jenkins Complete CI/CD Pipeline Environment Setup 
 
-1) Create a GitHub Repository `Jenkins-CI/CD-Pipeline-Project` and push the code in this branch(main) to 
+1) Create a GitHub Repository name `Jenkins-CICD-Pipeline-Project` and push the code in this branch(main) to 
     your remote repository (your newly created repository).
     - Go to GitHub (github.com)
     - Login to your GitHub Account
@@ -16,44 +16,44 @@
     - Confirm that the code exist on GitHub
 
 2) Jenkins/Maven/Ansible
-    - Create an Amazon Linux 2023 VM instance and call it "jenkins-maven-ansible"
+    - Create an Amazon Linux 2 VM instance and call it "jenkins-maven-ansible"
     - Instance type: t2.medium
     - Security Group (Open): 8080, 9100 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
-    - User data (Copy the following user data): https://github.com/Michaelgwei86/eagles-batch-devops-projects/blob/maven-nexus-sonarqube-jenkins-install/jenkins-install.sh 
+    - User data (Copy the following user data): https://github.com/awanmbandi/eagles-batch-devops-projects/blob/maven-nexus-sonarqube-jenkins-install/jenkins-install.sh
     - Launch Instance
 
 3) SonarQube
-    - Create an Create an Ubuntu 22.04 VM instance and call it "SonarQube"
+    - Create an Create an Ubuntu 18.04 VM instance and call it "SonarQube"
     - Instance type: t2.medium
     - Security Group (Open): 9000, 9100 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
-    - User data (Copy the following user data): https://github.com/Michaelgwei86/eagles-batch-devops-projects/blob/maven-nexus-sonarqube-jenkins-install/sonarqube-install.sh
+    - User data (Copy the following user data): https://github.com/awanmbandi/eagles-batch-devops-projects/blob/maven-nexus-sonarqube-jenkins-install/sonarqube-install.sh
     - Launch Instance
 
 4) Nexus
-    - Create an Amazon Linux 2023 VM instance and call it "Nexus"
+    - Create an Amazon Linux 2 VM instance and call it "Nexus"
     - Instance type: t2.medium
     - Security Group (Open): 8081, 9100 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
-    - User data (Copy the following user data): https://github.com/Michaelgwei86/eagles-batch-devops-projects/blob/maven-nexus-sonarqube-jenkins-install/nexus-install.sh
+    - User data (Copy the following user data): https://github.com/awanmbandi/eagles-batch-devops-projects/blob/maven-nexus-sonarqube-jenkins-install/nexus-install.sh
     - Launch Instance
 
 5) EC2 (Dev/Stage/Prod)
-    - Create 3 Amazon Linux 2023 VM instance and call them (Names: Dev-Env, Stage-Env and Prod-Env)
+    - Create 3 Amazon Linux 2 VM instance and call them (Names: Dev-Env, Stage-Env and Prod-Env)
     - Instance type: t2.micro
     - Security Group (Open): 8080, 9100 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
 
 6) Prometheus
-    - Create an Ubuntu 22.04 VM instance and call it "Prometheus"
+    - Create an Ubuntu 20.04 VM instance and call it "Prometheus"
     - Instance type: t2.micro
     - Security Group (Open): 9090 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
     - Launch Instance
 
 7) Grafana
-    - Create an Ubuntu 22.04 VM instance and call it "Grafana"
+    - Create an Ubuntu 20.04 VM instance and call it "Grafana"
     - Instance type: t2.micro
     - Security Group (Open): 3000 and 22 to 0.0.0.0/0
     - Key pair: Select or create a new keypair
@@ -61,7 +61,7 @@
 
 8) Slack 
     - Go to the bellow Workspace and create a Private Slack Channel and name it "yourfirstname-jenkins-cicd-pipeline-alerts"
-    - Link: https://app.slack.com/client/T043JRQBB5L/C044F5PH3DE 
+    - Link: https://join.slack.com/t/jjtech-eagles-cicd/shared_invite/zt-1go3k7pz7-uSy3D4ai3Pb7KJk2G1sc1g 
 
 9) Configure Promitheus
     - Login/SSH to your Prometheus Server
