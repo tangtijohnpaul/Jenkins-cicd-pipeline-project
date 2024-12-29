@@ -69,7 +69,7 @@ pipeline {
     //     input('Do you want to proceed?')
     //   }
     // }
-    stage('Deploy to Stage') {
+    /*stage('Deploy to Stage') {
       environment {
         HOSTS = "stage" // Make sure to update to "stage"
       }
